@@ -1,8 +1,24 @@
 aid: gago-group
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gago-group.png
 name: GAGO Group
-description: 'GAGO Group is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'GAGO Group (Beijing Jiage Tianyu Technology Co., Ltd.) is a China-based frontier-technology
+  company focused on agricultural and rural big data applications. Its homepage positions the business
+  around agricultural and rural big data, applying remote-sensing and data-analytics techniques to
+  agriculture. GAGO Group is backed by DCM Ventures and was added to the API Evangelist network from that
+  portfolio. As of this enrichment pass the company publishes a corporate website at gagogroup.cn but no
+  public developer portal, API documentation, or machine-readable API specification could be verified, so
+  no spec-derived API artifacts were produced.'
 url: https://raw.githubusercontent.com/api-evangelist/gago-group/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Frontier Tech
+- Agriculture
+- Big Data
+- Remote Sensing
+- Data Analytics
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gago-group-domain-security.yml
 - type: Website
   url: https://www.gagogroup.cn/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
